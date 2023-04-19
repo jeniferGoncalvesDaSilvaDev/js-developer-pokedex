@@ -20,27 +20,77 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="icon" href="/assets/css/imagens/pokebola.png">
 </head>
 
 <body>
     <section class="content">
         <h1>Pokedex</h1>
-
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
-
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
-        </div>
+         <ol class="pokemons" id="pokemonList">
+            <div class="types">
+                <li class="dark">
+                    <img src="/assets/css/imagens/gengar.png" alt="gengar" class="pokemon">
+                    
+                    <ol>
+                        <li class="name">
+                            gengar
+                           </li>
+                             <li class="number">
+                                #001
+                             </li>
+                            <li class="type">dark</li>
+                        </ol>
+                    
+                    
+                </li>
+                <li class="eletric">
+                   <img src="/assets/css/imagens/pikachu.png" alt="pikachu" class="pokemon">
+                    
+                   <ol class="details">
+                   <li class="name">
+                     pikachu
+                   </li>
+                   <li class="number">
+                      #002
+                   </li>
+                   <li class="type">eletric</li>
+                 </ol>
+                </li>
+                <li class="fire">
+                    <img src="/assets/css/imagens/chamander.png" alt="chamander" class="pokemon">
+                    
+                    <ol class="details">
+                    <li class="name">
+                      chamander
+                    </li>
+                    <li class="number">
+                       #003
+                    </li>
+                    <li class="type">fire</li>
+                  </ol>
+                </li>
+                <li class="grass">
+                   <img src="/assets/css/imagens/bubassauro.png" alt="bubassauro" class="pokemon">
+                   
+                   <ol class="details">
+                      <li class="name">
+                        bubassauro
+                      </li>
+                      <li class="number">
+                         #004
+                      </li>
+                      <li class="type">grass</li>
+                    </ol>
+                </li>
+                
+            </div>
+            
+         </ol>
+        
     </section>
 
     <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+    
 </body>
 
 </html>
