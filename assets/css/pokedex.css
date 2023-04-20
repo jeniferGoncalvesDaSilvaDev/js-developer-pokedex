@@ -1,50 +1,44 @@
-.pokemons {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
-ol.pokemons div li{
-    list-style: none;
-}
-/*ol.pokemons li{
-    background-color: #14A06F;
-    margin:0.5rem;
+
+/*tipos e detalhes de pokemons*/
+.dark{
+    background-color: rgb(71, 6, 71);
+    margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
-}*/
-.dark{
-    background-color: purple;
-    margin:0.5rem;
+    height: 400px;
+    width: 400px;
+}
+    
+
+.eletric{
+    background-color: rgb(228, 228, 21);
+    margin:.5rem;
     padding:1rem;
     border-radius: 1rem;
     height: 400px;
-    max-width: 100%;
-}
-.eletric{
-    background-color: yellow;
-    margin:0.5rem;
-    padding:1rem;
-    border-radius: 1rem;
+    width: 400px;
 }
 .fire{
-    background-color: red;
-    margin:0.5rem;
+    background-color: rgb(253, 169, 11);
+    margin:.5rem;
     padding:1rem;
     border-radius: 1rem;
+    height: 400px;
+    width: 400px;
+    
 }
 .grass{
-    background-color: green;
-    margin:0.5rem;
+    background-color:#14A06F;
+    margin:.5rem;
     padding:1rem;
     border-radius: 1rem;
+    height: 400px;
+    width: 400px;
 }
 .pokemon{
     max-width: 100%;
     height: 200px;
-    display: inline-block;
     display: flex;
     flex-direction: column;
 }
@@ -55,10 +49,10 @@ ol.pokemons div li{
 }
 .number{
     position: relative;
-    top:20px;
-    bottom: 1000px;
-    left:800px;
-    right:20px;
+    top:2px;
+    bottom: 900px;
+    left:160px;
+    right:600px;
     
 }
 .name{
@@ -68,8 +62,9 @@ ol.pokemons div li{
     flex-direction: column;
 }
 .type{
-    text-transform: uppercase;
+  
     color:white;
     display: flex;
     flex-direction: column;
+
 }
