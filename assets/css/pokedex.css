@@ -1,25 +1,33 @@
 
 
 /*tipos e detalhes de pokemons*/
-.dark{
-    background-color: rgb(71, 6, 71);
+ol.dark li{
+    background-color: rgb(172, 21, 172);
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
     height: 400px;
     width: 400px;
 }
-    
 
-.eletric{
-    background-color: rgb(228, 228, 21);
+ol .dark{
+    display: flex;
+    flex-direction: row-reverse;
+}  
+
+ol.eletric li{
+    background-color: rgb(201, 201, 13);
     margin:.5rem;
     padding:1rem;
     border-radius: 1rem;
     height: 400px;
     width: 400px;
 }
-.fire{
+ol .eletric {
+    display: flex;
+    flex-direction: row-reverse;
+}
+ol .fire li{
     background-color: rgb(253, 169, 11);
     margin:.5rem;
     padding:1rem;
@@ -28,13 +36,25 @@
     width: 400px;
     
 }
-.grass{
+ol.fire{
+    display: flex;
+    flex-direction: row-reverse;
+}
+    
+    
+
+ol.grass li{
     background-color:#14A06F;
-    margin:.5rem;
+    margin:1rem;
     padding:1rem;
     border-radius: 1rem;
     height: 400px;
     width: 400px;
+   
+}
+ol .grass {
+    display: flex;
+    flex-direction: row-reverse;
 }
 .pokemon{
     max-width: 100%;
@@ -45,7 +65,9 @@
 .number{
     height: 100px;
     max-width: 100%;
-    color: white;
+    color: #000;
+    opacity:.3;
+    text-align: right;
 }
 .number{
     position: relative;
@@ -61,10 +83,37 @@
     display: flex;
     flex-direction: column;
 }
+.types{
+    padding: 0px;
+    margin: 0px;
+}
 .type{
   
     color:white;
-    display: flex;
-    flex-direction: column;
+    padding: .5rem .5rem;
+    background-color: #61e1ca;
+    border-radius: 1rem;
+    font-size: 0.625rem;
+
+}
+/*botao*/
+.button{
+   background-color: #14A06F;
+   height: 60px;
+   width: 200px;
+   color:white;
+   border-radius: 1rem;
+   border: solid 1px #000;
+   text-transform: uppercase;
+   position: absolute;
+   right:600px;
+   top:2px;
+}
+/*animaçoes com transition*/
+.button:hover{
+    transition: background-color ;
+    background-color: #10dada;
+    transition: transform 1s;
+    transform:rotateZ(360deg);
 
 }
